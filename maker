@@ -1,0 +1,3 @@
+ 
+cat > $MYPATH/$1
+chmod 774 $MYPATH/$1
