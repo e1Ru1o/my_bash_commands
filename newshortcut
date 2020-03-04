@@ -1,0 +1,1 @@
+echo "cpy '$2'" | maker "$1"
