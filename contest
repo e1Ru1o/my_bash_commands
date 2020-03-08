@@ -1,4 +1,4 @@
-cd $HOME/CLionProjects/
+cd $PROJECTSDIR/
 python -c """
 import os
 from functools import reduce
