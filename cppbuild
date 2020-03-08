@@ -1,1 +1,4 @@
-if g++ --std=c++11 "$1.cpp"; then ./a.out; fi
+if g++ --std=c++11 "$1.cpp"; then
+    echo running...
+    ./a.out
+fi
