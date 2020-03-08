@@ -1,0 +1,9 @@
+cd $HOME/CLionProjects/
+python -c """
+import os
+from functools import reduce
+
+projects = [x for x in os.listdir() if 'contest' in x]
+number = reduce(lambda x, y: max(x, int(y[7:])), projects, 0)
+print(f'contest{number + 1}')
+"""
