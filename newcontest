@@ -1,0 +1,18 @@
+# break on error
+set -e
+
+# build directory
+cd $PROJECTSDIR
+NAME=$(contest)
+mkdir $NAME
+cd $NAME
+
+# build files
+touch {A..F}.cpp main.cpp
+
+# fill all file with cppcode code
+cppcode
+for file in *.cpp; do
+	xclip -o -selection clipboard > ${file};
+done
+code .
