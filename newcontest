@@ -8,11 +8,11 @@ mkdir $NAME
 cd $NAME
 
 # build files
-touch {A..F}.cpp main.cpp
+touch {A..F}.cpp main.cpp test.txt
 
 # fill all file with cppcode code
 cppcode
 for file in *.cpp; do
 	xclip -o -selection clipboard > ${file};
 done
-code .
+$1 .
