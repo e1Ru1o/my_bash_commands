@@ -1,0 +1,2 @@
+OLD=$(cmdview basictools)
+echo $OLD $1 | maker basictools
