@@ -1,0 +1,9 @@
+firefox $(python -c """
+
+data = '$1'.split('/')
+pid = data[-1]
+cnum = data[-2] if 'problemset' in data else data[-3]
+
+print(f'https://codeforces.com/contest/{cnum}/status/{pid}?friends=on')
+
+""")
