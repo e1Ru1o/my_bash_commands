@@ -1,0 +1,8 @@
+wget $(python -c """
+
+url = '$1'
+url = url.replace('/blob', '')
+url = url.replace('github.com', 'raw.githubusercontent.com')
+print(url)
+
+""")
