@@ -1,1 +1,1 @@
-sudo apt-get install xclip make git build-essential htop
+sudo apt-get install xclip make git build-essential htop unrar vlc
