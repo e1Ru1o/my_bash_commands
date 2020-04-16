@@ -15,4 +15,4 @@ cppcode
 for file in *.cpp; do
 	xclip -o -selection clipboard > ${file};
 done
-$1 .
+code .

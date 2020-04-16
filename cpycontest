@@ -1,0 +1,3 @@
+cd $PROJECTSDIR
+cp -r plantilla/ $1/
+code $1/

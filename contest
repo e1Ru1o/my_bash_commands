@@ -1,5 +1,5 @@
-cd $PROJECTSDIR/
-cpy $(python -c """
+cd $PROJECTSDIR
+echo $(python -c """
 
 import os
 from functools import reduce
