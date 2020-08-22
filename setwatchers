@@ -1,0 +1,2 @@
+echo $1 > /proc/sys/fs/inotify/max_user_watches
+# default is 8129
