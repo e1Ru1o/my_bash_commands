@@ -1,0 +1,2 @@
+sudo $DEFAULT_EDITOR /var/lib/dpkg/status
+# Find and delete all the info related to the damaged packages
