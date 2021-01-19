@@ -1,0 +1,2 @@
+echo "cpy \$(get2fa $2)" | maker $1
+echo $1 >> .gitignore

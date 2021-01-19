@@ -1,0 +1,4 @@
+python -c """
+import pyotp
+print(pyotp.TOTP('$1').now())
+"""
