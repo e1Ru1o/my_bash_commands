@@ -8,13 +8,17 @@ typedef long long ll;
 typedef vector<ll> dlist;
 typedef vector<dlist> matrix;
 
+void solve(){
+    int n, m;
+    
+}
+
 int main() {
     ios_base::sync_with_stdio(0);
     cin.tie(0);
 
-    int t, n, m;
-    cin >> t;
-
+    int t; cin >> t;
+    while(t--) solve();
 
     return 0;
 }//RUL0
