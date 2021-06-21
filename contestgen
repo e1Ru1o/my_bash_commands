@@ -1,0 +1,23 @@
+# break on error
+set -e
+
+# build directory
+cd $PROJECTSDIR
+NAME="$1"
+mkdir -p "$NAME"
+cd "$NAME"
+
+CODER="$2"
+rawcode "$CODER"
+TEMPLATE="xclip -o -selection clipboard"
+
+# build files
+touch test.txt 
+cp -r "$PROJECTSDIR/plantilla/.vscode" .
+for file in {A..F}; do
+    $TEMPLATE > "$file.cpp"
+done
+$TEMPLATE > main.cpp
+
+# open with code
+code .
