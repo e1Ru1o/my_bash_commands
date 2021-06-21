@@ -1,0 +1,1 @@
+cpy 'sudo openvpn --config vpnbook-ca222-tcp80.ovpn --connect-retry 5 [5]'
